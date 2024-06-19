@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/new.css" />
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="section"> 
+ <h1>MARCATO</h1>
+        <div class="spacer layer1">  </div>
+
+        <% for(let e of eData){  %>
+       <form action="/update" method="post" >
+        
+        <p>Book name: </p>
+        <input type="text" name="name" value="<%= e.tittle %>">
+         
+        <p>Notes:</p>
+        <textarea name="notes" rows="10" cols="50"><%=e.notes %> </textarea>
+
+        <p>Rating:</p>
+        <input type="text" placeholder="out of 5" name="rating" value="<%= e.rating %>">
+
+    <button type="submit" name="id" value="<%= e.id %>">Add</button>
+    </form>
+    <% } %>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="navbar">
+         <!-- <a class="btn " href="/new" role="button">NEW</a> -->
+
+        <h1>MARCATO</h1>
+
+        <form action="/search" method="post">
+          <input type="text" name="search" id="search" />
+          <button type="submit" class="search">Search</button>
+        </form>
+      </div>
+
+      <div class="spacer layer1">  </div>
+      <div class="shortMain">
+        <a class="btn " href="/new" role="button">NEW</a>
+        <div class="shorting">
+          <form action="/sort" method="post" style="margin-left: 20px">
+            <label for="sort">Choose the order</label>
+            <select name="sort" id="sort">
+              <option class="opt" value="date_added_new">
+                Date Added (Newest)
+              </option>
+              <option class="opt" value="date_added_old">
+                Date Added (Oldest)
+              </option>
+              <option class="opt" value="rating_top">Rating (Highest)</option>
+              <option class="opt" value="rating_low">Rating (Lowest)</option>
+            </select>
+            <button type="submit" class="sortbtn">Sort</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="item">
+    
+        <form action="/details" method="post" class="form" id="form">
+          
+          <% for (let book of books) {%>
+              <div class="main">
+            <div class="divImg">
+              <button
+                type="submit"
+                name="details"
+                value="<%= book.id %>"
+                id="<%= book.id %>"
+              >
+                <label for="<%= book.id %>">
+                  <img
+                    for="<%= book.id %>"
+                    src="<%= book.cover_id %>"
+                    alt="Book Cover"
+                /></label>
+              </button>
+            </div>
+            <div class="divData">
+              <button
+                type="submit"
+                id="<%= book.id %>"
+                value="<%= book.id %>"
+                name="detailName"
+              >
+                <label for="<%= book.id %>">
+                  <h2 for="<%= book.id %>"><%= book.tittle %></h2>
+                </label>
+              </button>
+
+              <!-- <% if (book.cover_url) { %>
+        <img src="<%= book.cover_url %>" alt="<%= book.title %>" />
+        <% } %> -->
+              <!-- <p id="title <%= book.id%>"><%= book.book_name %></p> -->
+              <p id="author <%= book.id%>" class="author"><%= book.author %></p>
+              <p id="brief <%= book.id %>"><%= book.brief %></p>
+              <p id="notes <%= book.id %>"> Rating: <%= book.rating %></p>
+           </div>
+         </div>
+            <% }%>
+           
+         
+        </form> 
+      
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function handler(id) {
+      document.getElementById("title" + id).setAttribute("hidden", true);
+      document.getElementById("edit" + id).setAttribute("hidden", true);
+      document.getElementById("done" + id).removeAttribute("hidden");
+      document.getElementById("input" + id).removeAttribute("hidden");
+    }
+  </script>
+</html>

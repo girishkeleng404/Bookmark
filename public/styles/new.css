@@ -1,0 +1,86 @@
+
+/* Base Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #001220;
+  }
+  
+  /* Form Layout */
+  form {
+    display: flex; /* Arrange form elements horizontally */
+    flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+    margin: 20px auto; /* Center form with some margin */
+    max-width: 600px; /* Limit form width for better layout */
+    padding: 20px; /* Add padding for better spacing */
+    border: 1px solid #ddd; /* Light border around the form */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  .form-group { /* Style groups of label and input/textarea */
+    margin-bottom: 15px; /* Spacing between form groups */
+    width: 100%; /* Take up full width initially */
+  }
+  
+  /* Labels and Inputs */
+  label {
+    display: block; /* Make labels on separate lines */
+    margin-bottom: 5px; /* Spacing between label and input */
+    font-weight: bold; /* Emphasize labels */
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%; /* Make inputs and textarea take full width */
+    padding: 5px;
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  textarea {
+    resize: vertical; /* Allow textarea resizing only vertically */
+  }
+  
+  input[type="text"] {
+    padding-right: 30px; /* Adjust padding for rating input */
+  }
+  
+  /* Rating Input Placeholder */
+  input[type="text"]::placeholder {
+    color: #ccc; /* Grayed-out placeholder text */
+  }
+  
+  /* Button */
+  button[type="submit"] {
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  /* Spacer (Optional) */
+  
+  
+
+  /* -----xxxxx---- */
+.spacer{
+  aspect-ratio: 1400/300;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+.layer1{
+  background-image: url('../icons/layer2.svg');
+
+}
+
+.layer2{
+  background-image: url('../icons/layer3.svg');
+}

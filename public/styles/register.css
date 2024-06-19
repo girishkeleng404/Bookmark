@@ -1,0 +1,70 @@
+/* Basic styling */
+body {
+    font-family: sans-serif;
+    margin: 0; /* Remove default margin from body */
+    padding: 20px; /* Add some padding for visual spacing */
+  }
+  
+  .container {
+    max-width: 600px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  h1 {
+    text-align: center; /* Center the heading text */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: #fff; /* Set card background color */
+    border: 1px solid #ddd; /* Add a thin border */
+    border-radius: 4px; /* Add rounded corners */
+    padding: 20px; /* Add padding inside the card */
+    margin-bottom: 20px; /* Add space between cards */
+  }
+  
+  /* Form styling */
+  .form-group {
+    margin-bottom: 15px; /* Add space between form groups */
+  }
+  
+  label {
+    display: block; /* Make labels appear on separate lines */
+    margin-bottom: 5px; /* Add space below labels */
+  }
+  
+  .form {
+    width: 100%; /* Make input fields full width */
+    padding: 10px; /* Add padding to input fields */
+    border: 1px solid #ccc; /* Add a thin border */
+    border-radius: 4px; /* Add rounded corners */
+  }
+  
+  .btn {
+    background-color: #4CAF50; /* Green button color */
+    color: white; /* White button text */
+    padding: 10px 20px; /* Add padding to button */
+    border: none; /* Remove default button border */
+    border-radius: 4px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .btn:hover {
+    background-color: #45A049; /* Darker green on hover */
+  }
+  
+  /* Google Sign Up button styling */
+  .btn-block {
+    width: 100%; /* Make button full width */
+  }
+  
+  .fab {
+    margin-right: 10px; /* Add space between icon and text */
+  }
+  
+  /* Optional: Center Google Sign Up button */
+  .card-body a {
+    text-align: center; /* Center button text */
+  }
+  

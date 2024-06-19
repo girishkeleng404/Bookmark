@@ -1,0 +1,110 @@
+/* Basic styling */
+body {
+  font-family: sans-serif; /* Set a base font */
+  margin: 0; /* Remove default margin from body */
+  padding: 20px; /* Add some padding for visual spacing */
+  background: #001220;
+  
+}
+
+/* Jumbotron styling */
+.jumbotron {
+  padding: 80px 0; /* Add padding above and below */
+  /* background-color: #eee; Set a light background color */
+  border-radius: 5px; /* Add rounded corners */
+  text-align: center; /* Center content within the jumbotron */
+  
+}
+
+
+.centered {
+  margin: 0 auto; /* Center the jumbotron horizontally */
+  max-width: 600px; /* Set a maximum width for the centered content */
+}
+
+/* Icon styling */
+.fas {
+  font-size: 7em; /* Set the icon size */
+  color: #333; /* Set the icon color */
+  margin-bottom: 20px; /* Add space below the icon */
+}
+
+/* Heading and lead text styling */
+h1.display-3 {
+  font-size: 3rem; /* Set heading font size */
+  margin-bottom: 1rem; /* Add space below the heading */
+  color: white;
+}
+
+.lead {
+  font-size: 1.5rem; /* Set lead text font size */
+  margin-bottom: 2rem; /* Add space below the lead text */
+  color: white;
+}
+
+/* Buttons styling */
+.btn {
+  background-color: #4CAF50; /* Set button background color */
+  color: white; /* Set button text color */
+  padding: 10px 20px; /* Add padding to buttons */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Add rounded corners */
+  margin-right: 10px; /* Add space between buttons */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.btn:hover {
+  background-color: #45A049; /* Darken button color on hover */
+}
+
+/* Optional: Add a horizontal line style */
+hr {
+  border: 1px solid #ddd; /* Set the border style and color */
+  width: 80%; /* Set the width of the horizontal line */
+  margin: 20px auto; /* Center the horizontal line */
+}
+
+
+/* -----xxxxx---- */
+.spacer{
+  aspect-ratio: 1400/350;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.layer1{
+  background-image: url('../icons/layer2.svg');
+
+}
+
+.layer2{
+  background-image: url('../icons/layer3.svg');
+}
+
+/* ------------xxxxxxxxxxx------- */
+
+.waves {
+  position: relative;
+  top: 0;
+  left:0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.waves svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 254px;
+}
+
+.waves .shape-fill {
+  fill: #fff;
+}
